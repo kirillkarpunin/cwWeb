@@ -1,0 +1,42 @@
+git<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>123</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="background">
+
+    <div id="main-menu" class="content">
+        <h1 class="logo">The Assassin of King</h1>
+
+        <form class="name-form">
+            <label for="player-name" class="player-name-label">Введите имя:</label>
+            <input id="player-name" class="player-name" type="text" placeholder="Имя игрока" maxlength="10"/>
+        </form>
+
+        <input id="play-button" class="play-button" type="button" value="Играть">
+    </div>
+
+    <canvas id="game-canvas" class="hidden" width="1216" height="640"></canvas>
+
+    <div id="game-over-screen" class="content hidden game-over-screen">
+        <p id="game-over-title" class="info-text label"></p>
+        <p class="info-text label">Score:</p>
+        <p id="game-over-score" class="info-text"></p>
+        <p class="info-text label">Leaderboard</p>
+        <table id="leaderboard" class="leaderboard">
+            <tbody></tbody>
+        </table>
+        <input id="try-again-button" class="menu-button" type="button" value="Try again">
+    </div>
+
+</div>
+
+<script src="game.js" type="module"></script>
+
+</body>
+</html>
